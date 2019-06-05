@@ -1,0 +1,78 @@
+{
+    "actions": [
+        {
+            "action": "install",
+            "module": "sequelize",
+            "target": "5.8.7",
+            "isMajor": false,
+            "resolves": [
+                {
+                    "id": 821,
+                    "path": "sequelize",
+                    "dev": false,
+                    "optional": false,
+                    "bundled": false
+                }
+            ]
+        }
+    ],
+    "advisories": {
+        "821": {
+            "findings": [
+                {
+                    "version": "5.2.8",
+                    "paths": [
+                        "sequelize"
+                    ],
+                    "dev": false,
+                    "optional": false,
+                    "bundled": false
+                }
+            ],
+            "id": 821,
+            "created": "2019-04-18T18:23:09.656Z",
+            "updated": "2019-04-18T18:43:33.351Z",
+            "deleted": null,
+            "title": "SQL Injection",
+            "found_by": {
+                "link": "",
+                "name": "maxdos64"
+            },
+            "reported_by": {
+                "link": "",
+                "name": "maxdos64"
+            },
+            "module_name": "sequelize",
+            "cves": [],
+            "vulnerable_versions": "<3.0.0 || >=5.0.0 <5.3.0",
+            "patched_versions": ">=3.0.0 <5.0.0 || >=5.3.0",
+            "overview": "Versions of `sequelize` prior to 5.3.0 (excluding v3 and v4) are vulnerable to SQL Injection. PostgreSQL option`standard_conforming_strings` is not set to `on` by default, which may allow attackers to inject SQL statements due to poor handling of backslashes in string literals.",
+            "recommendation": "Upgrade to version 5.3.0 or later.",
+            "references": "- [Github PR](https://github.com/sequelize/sequelize/pull/10746)\n- [Snyk Report](https://snyk.io/vuln/SNYK-JS-SEQUELIZE-174167)",
+            "access": "public",
+            "severity": "moderate",
+            "cwe": "CWE-89",
+            "metadata": {
+                "module_type": "",
+                "exploitability": 5,
+                "affected_components": ""
+            },
+            "url": "https://npmjs.com/advisories/821"
+        }
+    },
+    "muted": [],
+    "metadata": {
+        "vulnerabilities": {
+            "info": 0,
+            "low": 0,
+            "moderate": 1,
+            "high": 0,
+            "critical": 0
+        },
+        "dependencies": 23,
+        "devDependencies": 0,
+        "optionalDependencies": 0,
+        "totalDependencies": 23
+    },
+    "runId": "7ac30444-1635-46a0-989b-3a0eae839905"
+}
